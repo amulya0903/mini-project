@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+.App {
+  text-align: center;
+  font-family: "Gill Sans", sans-serif;
+   background-color:  #ebfcff;
+   
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color:  #ebfcff;
+  
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+body::before {
+  content: url('logoo.png'); /* Set the logo image as content */
+  display: block; /* Make the logo a block-level element */
+  width: 50px; /* Set the width of the logo (reduce size as needed) */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 100px; /* Adjust margin as needed */
+  /* Additional styling */
+  position: absolute; /* Position the logo absolutely */
+  top: 0; /* Adjust top position as needed */
+  left: 39%; /* Position the logo horizontally in the center */
+  transform: translateX(-50%); /* Adjust horizontal centering */
+  
+}
+
+
+.search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  margin-top: 20px;
+  width: 70%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+ 
+}
+
+.rbord {
+  background: #ffffff;
+  margin: 0 200px;
+  padding: 20px;
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  border-radius: 15px; 
+  overflow: hidden;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+  color: #333;
+  width: 100%;
+}
+
+
+
+.product-card:hover { 
+  transform: scale(1.05);
+}
+
+.product-card:focus {
+  outline: 2px solid black;
+}
+.product-image-home {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #9dd6e0;
+}
+
+.product-image-home:active {
+  border-bottom: 1px solid black ;
+}
+.product-details-home {
+  padding: 10px;
+}
+.product-price-home {
+  font-weight: bold;
+  color: rgb(46, 49, 106);
+}
+
+.product-title-home {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.rbord-pro {
+  background-color: #ffffff;
+  margin: 0 200px;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.product-page {
+  display: flex;
+  justify-content:center;
+  text-align: left;
+  align-items:initial;
+  padding: 20px;
+  margin: 20px;
+  background-color:  #ffffff;
+}
+
+.product-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 40px;
+}
+
+.product-details {
+  width: 100%;
+  max-width: 600px;
+  color: #ddd;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.product-title {
+  font-family:Roboto, Arial, sans-serif;
+  font-size:small;
+  margin-bottom: 10px;
+ color:rgb(0, 0, 0);
+}
+
+.product-price {
+  font-weight:bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size:small;
+  margin-bottom: 10px;
+  color:rgb(133, 132, 132);
+}
+
+.product-rating {
+  font-size:small;
+  color:rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.product-heading{
+  font-size:small;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  
+}
+
+.login-container,
+.register-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
+  text-align: center;
+  font-family: 'Gill Sans Extrabold', sans-serif;
+  
+}
+
+.login-container h1,
+.register-container h1 {
+  margin-bottom: 30px;
+  color: #377cf4;
+  font-size: 2rem;
+}
+
+.login-container form,
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container input,
+.register-container input {
+  margin-bottom: 20px;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f8f8f8;
+  transition: border-color 0.3s ease;
+}
+
+.login-container input:focus,
+.register-container input:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.login-container button,
+.register-container button {
+  padding: 12px 24px;
+  background-color: #377cf4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover,
+.register-container button:hover {
+  background-color: #26529f;
+}
+
+.login-container a,
+.register-container a {
+  text-decoration: none;
+  color: #333;
+  font-style: italic;
+  margin-top: 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.login-container a:hover,
+.register-container a:hover {
+  color: #26529f;
+}
+
+.logout-button {
+  padding: 12px 24px;
+  background-color: rgb(27, 88, 168);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.logout-button:hover {
+  background-color: #26529f;
+}
+
+
+.form-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+  color: #333;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+
